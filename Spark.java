@@ -33,7 +33,7 @@ public class Spark {
         double intervalSize = max - min;
 
         StringBuilder sb = new StringBuilder(input.length);
-        String sparks = "▁▂▃▄▅▆▇";
+        String sparks = "\u2581\u2582\u2583\u2584\u2585\u2586\u2587\u2588";
         for (double d : input) {
             int sparkIndex = (int) ((d - min) / intervalSize * (sparks.length() - 1));
             sb.append(sparks.charAt(sparkIndex));
